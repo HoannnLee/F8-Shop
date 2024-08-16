@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></Link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font-icon/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" href="./assets/Image/fruits-and-vegetables.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/font-icon/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>FrehFruits</title>
+</head>
+<body>
+    <div class="app">
+        <!-----------------------Header-------------------------------------->
+        <header class="header">
+            <div class="grid">
+
+                <!----------- Navbar----------------------->
+
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--hasqr header__navbar-item--separate">
+                            Vào Cửa Hàng Trên Ứng Dụng FrehFruits
+                            <div class="header__qr">
+                                <img src="./assets/Image/QRCode.png" alt="QR Code" class="header_qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/Image/CHclay.png" alt="" class="header__qr-dowload-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/Image/AppStore.png" alt="" class="header__qr-dowload-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-noPointer">  Kết Nối </span>
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fa-brands fa-facebook"></i></a>
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fa-brands fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-Link">
+                                <i class="header__navbar-icon fa-solid fa-bell " style="color: #fcfcfc;"></i>
+                                Thông Báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3> Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header__notifi-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/Image/Cherry New Zealand.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Cherry NewZeaLand</span>
+                                                <span class="header__notify-des">Cherry New Zealand là loại cherry ngon nhất trong tất cả các loại cherry nhập khẩu. Trái cứng, thịt cherry dai, dòn, và ngọt hơn.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/Image/Kiwi xanh Zespri NewZealand 2.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Kiwi Xanh Zespri NewZeaLand</span>
+                                                <span class="header__notify-des">Kiwi xanh Newzealand là một loại trái cây có hình bầu dục, vỏ màu nâu đậm có lông, thịt màu xanh lá xen lẫn hạt đen rất nổi bật và đẹp mắt.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/Image/Cam sành Bến Tre 2.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Cam Sành Bến Tre</span>
+                                                <span class="header__notify-des">Cam sành là loại trái cây tươi giàu vitamin C, vitamin A, canxi, chất xơ… rất bổ dưỡng cho cơ thể phụ nữ mang thai. Cam sành giúp ngăn ngừa một số loại khuyết tật bẩm sinh, tăng sức đề kháng và giúp sản xuất các tế bào máu khỏe mạnh. </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem Tất Cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-Link">
+                                <i class="header__navbar-icon fa-solid fa-circle-info" style="color: #ffffff;"></i>
+                                Trợ Giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                           Đăng Ký
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                           Đăng Nhập
+                        </li> -->
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/Image/premium_photo-1718169684197-adf733b5c7ef.avif" alt="" class="header__navabar-user-img">
+                            <span class="header__navbar-user-name">Hoan Lee</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!---------- header-search----------->
+
+                <div v class="header-with-search">
+
+                    <div class="header__logo">
+                        <a href="#" class="header__logon-link">
+                            <svg width="64px" height="64px" viewBox="-4.8 -4.8 33.60 33.60" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25012 7.01346C8.25004 7.00898 8.25 7.00449 8.25 7V6C8.25 3.92893 9.92893 2.25 12 2.25C14.0711 2.25 15.75 3.92893 15.75 6V7C15.75 7.0045 15.75 7.00898 15.7499 7.01346C17.0472 7.04975 17.8375 7.18393 18.4425 7.67997C19.272 8.35995 19.5029 9.5144 19.9646 11.8233L20.5646 14.8233C21.2287 18.1437 21.5608 19.8039 20.6606 20.902C19.7604 22 18.0673 22 14.6812 22H9.3188C5.93262 22 4.23954 22 3.33936 20.902C2.43919 19.8039 2.77123 18.1437 3.43532 14.8233L4.03532 11.8233C4.4971 9.5144 4.72799 8.35995 5.55742 7.67997C6.16251 7.18392 6.95273 7.04975 8.25012 7.01346ZM9.75 6C9.75 4.75736 10.7574 3.75 12 3.75C13.2426 3.75 14.25 4.75736 14.25 6V7C14.25 7 14.25 7 14.25 7C14.1944 6.99999 14.1381 7 14.0812 7H9.9188C9.86185 7 9.80559 7 9.75 7.00001C9.75 7.00001 9.75 7.00001 9.75 7.00001V6ZM15 11C15.5523 11 16 10.5523 16 10C16 9.44772 15.5523 9 15 9C14.4477 9 14 9.44772 14 10C14 10.5523 14.4477 11 15 11ZM9.99998 10C9.99998 10.5523 9.55226 11 8.99998 11C8.44769 11 7.99998 10.5523 7.99998 10C7.99998 9.44772 8.44769 9 8.99998 9C9.55226 9 9.99998 9.44772 9.99998 10Z" fill="#fff"></path> </g></svg>
+                            <span class="header__logo-title"> FruitShop</span>
+                        </a>
+                    </div>
+                    <!-- search-->
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử Tìm Kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="" class="header__search-history-link">Cherry BrookSide</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="header__search-history-link">Bưởi Da Xanh</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong Shop <i class="header__search-select-icon fa-solid fa-angle-down"></i></span>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span> Trong Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span> Ngoài Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <!-- Cart -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            <span class="header__cart-notice"> 3 </span>
+                            <!-- No cart : header__cart--no-cart-->
+                            <div class="header__cart-list  ">
+                                <img src="./assets/Image/cart-empty-img.8b677cb3.png" alt="" class="header__cart--no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">
+                                    Sản phẩm đã thêm
+                                </h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart Item-->
+                                    <li class="header__cart-item">
+                                        <img src="./assets/Image/Cherry New Zealand.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+
+                                            <div class="header__cart-item-info-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Cherry Mỹ BrookSide
+                                                </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">500.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-info-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại : Cherry
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xóa
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./assets/Image/Cam vàng Mỹ 2.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+
+                                            <div class="header__cart-item-info-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Cam Vàng Mỹ
+                                                </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">100.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-info-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại : Cam
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xóa
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./assets/Image/bưởi 5 roi 2.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+
+                                            <div class="header__cart-item-info-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Bưởi năm roi
+                                                </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">50.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-info-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại : Bưởi
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xóa
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header__cart-view-cart btn btn--primary"> Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+           
+        </header>
+
+        <!----------------------------End Header----------------------------->
+
+
+        <!----------------------------Main------------------------------------>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="fa-solid fa-list category__heading-icon"></i>
+                                Danh Mục Trái Cây
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="" class="category-item__link category-item--active">
+                                        Cherry
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">
+                                        Kiwwi
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">
+                                        Chuối
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">
+                                        Cam
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">
+                                        Bưởi
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo </span>
+                            <button class="home-filter__btn btn "> Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary" > Mới nhất</button>
+                            <button class="home-filter__btn btn "> Bán chạy</button>
+
+
+                            <div class="select-ipnut">
+                                <span class="select-input__label">Giá </span>
+                                <i class="select-ipnut__icon fa-solid fa-angle-down"></i>
+
+                                <!--List option  -->
+                                
+                                <ul class="select-ipnut__list">
+                                    <li class="select-ipnut__item">
+                                        <a href="" class="select-ipnut__link">Giá thấp đến cao</a>
+                                    </li>
+                                    <li class="select-ipnut__item">
+                                        <a href="" class="select-ipnut__link">Giá cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="home-filter__paginate">
+                                <span class="home-filter__paginate-num">
+                                    <span class="home-filter__paginate-current">1</span> / 14
+                                </span>
+
+                                <div class="home-filter__paginate-control">
+                                    <a href="" class="home-filter__paginate-btn home-filter__paginate--disable">
+                                        <i class="home-filter__paginate-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__paginate-btn">
+                                        <i class="home-filter__paginate-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!------------------------- Show Product -------------------->
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+
+                                    <!--- Product item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image:url(./assets/Image/Cherry\ New\ Zealand.jpg) ;"></div>
+                                        <h4 class="home-product-item__name">Cherry NewZeaLand</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                            <span class="home-product-item__price-current">600.000đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <!-- home-product-item__like--liked-->
+                                            <span class="home-product-item__like ">
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">FreshFruits</span>
+                                            <span class="home-product-item__oirgin-title">NewZeaLand</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span> Yêu Thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------End Main------------------------------------>
+
+
+
+        <!---------------------------Footer-------------------------------------->
+
+        <footer class="footer">
+
+        </footer>
+
+        <!---------------------------End Footer------------------------------------>
+    </div>
+
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body"> -->
+
+            <!--Register form-->
+
+            <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng Ký</h3>
+                    <span class="auth-form__switch-btn">Đăng Nhập</span>
+                </div>
+                <div class="auth-form__container">
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <div class="form-feild">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <lable class="form-label">Email</lable>
+                            </div>
+                            <div class="form-feild">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <lable class="form-label">Nhập Mật Khẩu</lable>
+                            </div>
+                            <div class="form-feild">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <lable class="form-label">Nhập Lại Mật Khẩu</lable>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="auth-form___aside">
+                        <p class="auth-from___policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với FreshFruit về
+                            <a href="" class="auth-from___text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-from___text-link">Chính sách bảo mật</a>
+                        </p> 
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls--back btn--normal">Trở Lại</button>
+                        <button class="btn btn--primary">Đăng Ký</button>
+                    </div>
+
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--fb btn btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands btn--size-s fa-facebook"></i>
+                        <span class="auth-form__socials-title"> Kết nối với faceBook</span>
+                    </a>
+                    
+                    <a href="" class="btn btn--with-icon">
+                        <i class="auth-form__socials--GG auth-form__socials-icon fa-brands btn--size-s fa-google"></i>                      
+                        <span class="auth-form__socials-title">  Kết nối với Google</span>
+                    </a>
+                </div>
+
+            </div> -->
+
+            <!--Login form -->
+
+            <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng Nhập</h3>
+                    <span class="auth-form__switch-btn">Đăng Ký</span>
+                </div>
+                <div class="auth-form__container">
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <div class="form-feild">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <lable class="form-label">Email</lable>
+                            </div>
+                            <div class="form-feild">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <lable class="form-label">Nhập Mật Khẩu</lable>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="auth-form___aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form_help_link auth-form_help-">Quên Mật Khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form_help_link">Cần Trợ Giúp?</a>
+
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls--back btn--normal">Trở Lại</button>
+                        <button class="btn btn--primary">Đăng Ký</button>
+                    </div>
+
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--fb btn btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands btn--size-s fa-facebook"></i>
+                        <span class="auth-form__socials-title"> Kết nối faceBook</span>
+                    </a>
+                    
+                    <a href="" class="btn btn--with-icon">
+                        <i class="auth-form__socials--GG auth-form__socials-icon fa-brands btn--size-s fa-google"></i>                      
+                        <span class="auth-form__socials-title"> Kết nối  Google</span>
+                    </a>
+                </div>
+
+            </div> -->
+        <!-- </div>
+    </div> -->
+
+    <script src="./assets/main.js"> </script>
+</body>
+</html>
