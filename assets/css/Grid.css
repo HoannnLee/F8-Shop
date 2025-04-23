@@ -1,0 +1,615 @@
+/* class này nó sẽ chiếm hết chiều rộng màn hình , thuộc tính display = block giúp cho
+class này vẫn hoạt động bth nếu nó đc sử dụng bởi 1 phần từ ko phải là block
+reset padding để không làm ảnh hướng tới kích thước của grid
+*/
+*{
+    /*giữ kích thước khai bao ban đầu cho block , với điều kiện padding không dc vượt quá kích thước ban đầu*/
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+/*giới hạn kích thước chỉ bé hơn hoặc bằng 1200px và khoảng cách trái phải auto*/
+
+.grid.wide {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.row.no-gutters .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*Mb-*: nghĩa là column, prefix class này có tác dụng trên mobile. * từ 0 tới 12. 
+Trong đó 0 được sử dụng để ẩn column, 1 - 12 tương ứng với độ rộng chúng ta muốn sử dụng cho column (trên cơ sở 12 columns trong Grid system)*/
+
+/*Mb-0 là ẩn đi 1 cột */
+
+.Mb-0 {
+    display: none;
+}
+
+.Mb-1 {
+    /* flex: Flex-grow Flex-shrink Flex-basics*/
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+.Mb-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.Mb-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.Mb-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.Mb-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.Mb-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.Mb-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.Mb-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.Mb-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.Mb-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.Mb-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+
+.Mb-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.Mb-o-1 {
+    margin-left: 8.33333%;
+}
+
+.Mb-o-2 {
+    margin-left: 16.66667%;
+}
+
+.Mb-o-3 {
+    margin-left: 25%;
+}
+
+.Mb-o-4 {
+    margin-left: 33.33333%;
+}
+
+.Mb-o-5 {
+    margin-left: 41.66667%;
+}
+
+.Mb-o-6 {
+    margin-left: 50%;
+}
+
+.Mb-o-7 {
+    margin-left: 58.33333%;
+}
+
+.Mb-o-8 {
+    margin-left: 66.66667%;
+}
+
+.Mb-o-9 {
+    margin-left: 75%;
+}
+
+.Mb-o-10 {
+    margin-left: 83.33333%;
+}
+
+.Mb-o-11 {
+    margin-left: 91.66667%;
+}
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+/*
+- Tb-*: nghĩa là medium, prefix class này có tác dụng trên Tablet.
+*/
+    
+    .Tb-0 {
+        display: none;
+    }
+
+    .Tb-1,
+    .Tb-2,
+    .Tb-3,
+    .Tb-4,
+    .Tb-5,
+    .Tb-6,
+    .Tb-7,
+    .Tb-8,
+    .Tb-9,
+    .Tb-10,
+    .Tb-11,
+    .Tb-12 {
+        display: block;
+    }
+
+    .Tb-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .Tb-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .Tb-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .Tb-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .Tb-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .Tb-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .Tb-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .Tb-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .Tb-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .Tb-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .Tb-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .Tb-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .Tb-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .Tb-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .Tb-o-3 {
+        margin-left: 25%;
+    }
+
+    .Tb-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .Tb-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .Tb-o-6 {
+        margin-left: 50%;
+    }
+
+    .Tb-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .Tb-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .Tb-o-9 {
+        margin-left: 75%;
+    }
+
+    .Tb-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .Tb-o-11 {
+        margin-left: 91.66667%;
+    }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .row.sm-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .row.sm-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+/*
+- PC-*: nghĩa là large, prefix class này có tác dụng trên PC.
+*/
+
+    .PC-0 {
+        display: none;
+    }
+
+    .PC-1,
+    .PC-2,
+    .PC-2-4,
+    .PC-3,
+    .PC-4,
+    .PC-5,
+    .PC-6,
+    .PC-7,
+    .PC-8,
+    .PC-9,
+    .PC-10,
+    .PC-11,
+    .PC-12 {
+        display: block;
+    }
+
+    .PC-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .PC-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .PC-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .PC-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .PC-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .PC-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .PC-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .PC-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .PC-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .PC-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .PC-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .PC-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .PC-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .PC-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .PC-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .PC-o-3 {
+        margin-left: 25%;
+    }
+
+    .PC-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .PC-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .PC-o-6 {
+        margin-left: 50%;
+    }
+
+    .PC-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .PC-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .PC-o-9 {
+        margin-left: 75%;
+    }
+
+    .PC-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .PC-o-11 {
+        margin-left: 91.66667%;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+
+    .wide .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .wide .row.sm-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .wide .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .wide .row.sm-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .wide .PC-0 {
+        display: none;
+    }
+
+    .wide .PC-1,
+    .wide .PC-2,
+    .wide .PC-2-4,
+    .wide .PC-3,
+    .wide .PC-4,
+    .wide .PC-5,
+    .wide .PC-6,
+    .wide .PC-7,
+    .wide .PC-8,
+    .wide .PC-9,
+    .wide .PC-10,
+    .wide .PC-11,
+    .wide .PC-12 {
+        display: block;
+    }
+
+    .wide .PC-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .wide .PC-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .wide .PC-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .wide .PC-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .wide .PC-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .wide .PC-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .wide .PC-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .wide .PC-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .wide .PC-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .wide .PC-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .wide .PC-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .wide .PC-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .wide .PC-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .wide .PC-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .wide .PC-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .wide .PC-o-3 {
+        margin-left: 25%;
+    }
+
+    .wide .PC-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .wide .PC-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .wide .PC-o-6 {
+        margin-left: 50%;
+    }
+
+    .wide .PC-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .wide .PC-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .wide .PC-o-9 {
+        margin-left: 75%;
+    }
+
+    .wide .PC-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .wide .PC-o-11 {
+        margin-left: 91.66667%;
+    }
+}

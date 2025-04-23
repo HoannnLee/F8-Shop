@@ -5,4 +5,3 @@ Liked.addEventListener('click', function() {
 });
 
 
-
